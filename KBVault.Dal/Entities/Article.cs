@@ -45,6 +45,9 @@ namespace KBVault.Dal.Entities
         [StringLength(200)]
         public string SefName { get; set; }
 
+        [NotMapped]
+        public string AuthorName { get; set; }
+
         public virtual KbUser KbUser { get; set; }
 
         public virtual Category Category { get; set; }

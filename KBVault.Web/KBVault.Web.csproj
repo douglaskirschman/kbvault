@@ -992,6 +992,7 @@
     <Content Include="App_GlobalResources\UIResources.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>UIResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="App_GlobalResources\CommonResources.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>

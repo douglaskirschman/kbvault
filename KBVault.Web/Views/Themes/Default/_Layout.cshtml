@@ -1,6 +1,4 @@
-﻿
-
-@{
+﻿@{
     var searchTerm = "";
     
     if(  ViewBag.SearchTerm != null )
@@ -16,7 +14,6 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge;" /> 
     
-     
     @{ Html.RenderPartial("GoogleFonts"); }
     <link rel="stylesheet" href="@Url.Content("~/Assets/css/plugins/bootstrap.css")"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -30,7 +27,6 @@
     <script type="text/javascript">
         var KB_SearchUrl = "@Url.Action("Ajax","Search")";
     </script>
-
 </head>
 <body>
     <div class="navbar navbar-default" role="navigation">
@@ -51,16 +47,6 @@
     </div>
     <div class="container">
         <div class="row">
-            @*
-            <div class="col-lg-12 page-header">
-                <h1>
-                    @ViewBag.CompanyName
-                    <small>@ViewBag.TagLine</small>
-                </h1>
-                <p runat="server" id="htmlJumbotronText" class="lead">@ViewBag.JumbotronText</p>
-            </div>
-            *@
-
             @using (Html.BeginForm("Do", "Search", FormMethod.Post, new { id = "SearchForm" }))
             {
                 <div class="input-group">       
@@ -70,18 +56,14 @@
                             <input type="submit" id="btnDoSearch" class="btn btn-default" value="Search" />
                         </span>
                 </div>             
-            }    
-            
+            }
         </div>
-
         <br />
-        @RenderBody()   
-       
+        @RenderBody()
     </div>
     <div id="footer">
         Built by KbVault
     </div>
-        
     <script src="@Url.Content("~/Assets/js/jquery/jquery-2-0-2.js")"></script>
     <script src="@Url.Content("~/Assets/js/jquery/jquery-ui-1-10-4.js")"></script>
     <script src="@Url.Content("~/Assets/js/bootstrap/bootstrap.js")"></script>
@@ -91,7 +73,7 @@
     <script src="@Url.Content("~/Assets/js/plugins/cookie/jquery.cookie.js")"></script>
     <script src="@Url.Content("~/Assets/Themes/"+ViewBag.Theme+"/js/frontend.js")"></script>
     
-@RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
 
     @if( !String.IsNullOrEmpty(ViewBag.AnalyticsAccount) )
     {
@@ -107,6 +89,5 @@
             ga('send', 'pageview');
         </script>
     }
-
 </body>
 </html>

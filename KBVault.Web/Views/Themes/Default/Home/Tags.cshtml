@@ -22,30 +22,29 @@
                 </li>
             }
         </ul>
-
     </div>
 </div>
 <div class="pager">
     @if( Model.TotalItemCount > Model.PageSize )
     {
         <!-- -->
-                @Html.Raw(Html.Pager(
-                    new Options
-                    {
-                        PageSize = Model.PageSize,
-                        TotalItemCount = Model.TotalItemCount,
-                        CurrentPage = Model.PageNumber,
-                        ItemTexts = new ItemTexts() { Next = @CommonResources.PagingNext, Previous = @CommonResources.PagingPrevious },
-                        ItemIcon = new ItemIcon() { First = "icon-backward", Previous = "icon-chevron-left", Next = "icon-chevron-right", Last = "icon-forward" },
-                        TooltipTitles = new TooltipTitles() {   Next = @CommonResources.PagingNextTooltip, 
-                                                                Previous = @CommonResources.PagingPreviousTooltip, 
-                                                                Page = @CommonResources.PagingGoToPageTooltip 
-                                                            },
-                        Size = Size.normal,
-                        Alignment = Alignment.centered,
-                        IsShowControls = true,
-                        IsShowFirstLast = true,
-                        IsShowPages = true
-                    }, new {})) 
+        @Html.Raw(Html.Pager(
+            new Options
+            {
+                PageSize = Model.PageSize,
+                TotalItemCount = Model.TotalItemCount,
+                CurrentPage = Model.PageNumber,
+                ItemTexts = new ItemTexts() { Next = @CommonResources.PagingNext, Previous = @CommonResources.PagingPrevious },
+                ItemIcon = new ItemIcon() { First = "icon-backward", Previous = "icon-chevron-left", Next = "icon-chevron-right", Last = "icon-forward" },
+                TooltipTitles = new TooltipTitles() {   Next = @CommonResources.PagingNextTooltip, 
+                                                        Previous = @CommonResources.PagingPreviousTooltip, 
+                                                        Page = @CommonResources.PagingGoToPageTooltip 
+                                                    },
+                Size = Size.normal,
+                Alignment = Alignment.centered,
+                IsShowControls = true,
+                IsShowFirstLast = true,
+                IsShowPages = true
+            }, new {})) 
     }        
 </div>

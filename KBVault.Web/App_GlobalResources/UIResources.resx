@@ -157,7 +157,7 @@
     <value>Password</value>
   </data>
   <data name="LoginFormRememberMe" xml:space="preserve">
-    <value>RememberMe</value>
+    <value>Remember Me</value>
   </data>
   <data name="LoginFormSubmitButton" xml:space="preserve">
     <value>Login</value>
@@ -535,7 +535,7 @@
     <value>Index Management</value>
   </data>
   <data name="PublicTotalArticleCountMessage" xml:space="preserve">
-    <value>We have published {0} articles.</value>
+    <value>Total articles: {0}</value>
   </data>
   <data name="SettingsShowTotalArticleCountOnFrontPage" xml:space="preserve">
     <value>Show total number of articles on front page</value>
