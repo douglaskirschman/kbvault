@@ -4,18 +4,15 @@
 body   
 {
     height: 100%;
-    background:  #FFF;    
+    background: #FFF;    
     margin: 0px;
-    padding: 0px;    
-    font-family: 'Open Sans', sans-serif;    
+    padding: 0px;      
 }
 
 h1,h2,h3,h4,h5,h6
-{   
-    font-family: 'Open Sans', sans-serif;     
+{      
     color:#777;
 }
-
 
 .section-title {
 	margin-top: 0;
@@ -39,19 +36,53 @@ h1,h2,h3,h4,h5,h6
     font-size:12px;
 }
 
-.subhead
-{
-    background: url(../img/bg.png) repeat;/*linear-gradient(45deg, rgb(210, 210, 250) 0%, rgb(50, 90, 100) 90%) repeat scroll 0% 0% transparent;*/
-     color : #EEE;
+.subhead {
+    color: #FFF;
+    box-shadow: 0px 4px 7px 2px #999999;
+}
+
+.bg-jumbotron {
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.png) repeat;
+    background-position: center center;
+    -webkit-animation: zoomin 60s infinite;
+    position: absolute;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-glow {
+    filter: drop-shadow(0 0 0.6rem steelblue);
+}
+
+.text-glow {
+    filter: drop-shadow(0 0 0.3rem black);
+}
+
+.input-group-addon.warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 173, 78);
+    border-color: rgb(238, 162, 54);
 }
 
 header h1 a{color:rgb(51, 51, 51);}
 header h1 a:hover{color:rgb(51, 51, 51);}
 h1 small{color:rgb(51, 51, 51) ;}
 
-header.subhead h1 a{color:#DED;}
-header.subhead h1 a:hover{color:#DED;}
-header.subhead h1 small{color:#EEE}
+header.subhead h1 a{color:#FFF;}
+header.subhead h1 a:hover{color:#FFF; text-decoration: none;}
+header.subhead h1 small{color:#FFF}
 
 #footer
 {
@@ -64,10 +95,8 @@ header.subhead h1 small{color:#EEE}
 
 .margin-10{ margin-top:10px;}
 
-
-
 #tagCloud {   
-	width:100%; 	
+	width:100%;
 	text-align:center; padding:5px;  
 	overflow:auto; font-size:90%;  
 }  
@@ -78,7 +107,6 @@ header.subhead h1 small{color:#EEE}
 	}  
 #tagList li a { text-decoration:none; }  
 #tagList li a:hover{ text-decoration:underline; }
-
 
 .bg-red,
 .bg-yellow,

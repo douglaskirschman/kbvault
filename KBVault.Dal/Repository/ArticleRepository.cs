@@ -112,10 +112,17 @@ namespace KBVault.Dal.Repository
         {
             using (var db = new KbVaultContext())
             {
-                return db.PublishedArticles()
+                var articles = db.PublishedArticles()
                     .OrderByDescending(a => a.Edited)
                     .Take(maxItemCount)
                     .ToList();
+
+                foreach (var article in articles)
+                {
+                    article.AuthorName = article.KbUser.Name;
+                }
+
+                return articles;
             }
         }
 
