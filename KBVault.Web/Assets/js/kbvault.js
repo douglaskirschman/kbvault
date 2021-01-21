@@ -117,70 +117,12 @@ function BindRemoveTagEvents() {
     });
 }
 
-function BindRestoreEvent() {
-    $(".btn-restore").click(function () {
-        var id = $(this).attr("data-order");
-        var backupFile = $(this).attr("data-file");
-        var actionUrl = $(this).attr("data-url");
-        $("#restore-progress-bar-" + id).show();
-        $(this).hide();
-        $.ajax({
-            url: actionUrl,
-            type: 'POST',
-            Id: id,
-            data: { file: backupFile }
-        }).done(function (data) {
-            var id = this.Id;
-            if (data.Successful) {
-                alert(data.ErrorMessage);
-                document.location.reload();
-            }
-            else
-                alert(data.ErrorMessage);
-            $("#restore-progress-bar-"+id).hide();
-            $("#restore-"+id).show();
-        }).fail(function (data) {
-            var id = this.Id;
-            $("#restore-progress-bar-" + id).hide();
-            $("#restore-" + id).show();
-            alert(data.statusText);
-        });
-    });
-}
-
-function BindBackupEvent() {
-    $("#create-backup").click(function () {
-        $("#backup-progress-bar").show();
-        $("#create-backup").hide();
-        var actionUrl = $(this).attr("data-action-url");        
-        $.ajax({
-            url: actionUrl,
-            type: 'POST'
-        }).done(function (data) {
-            if (data.Successful) {
-                alert("Backup successful");
-                document.location.reload();
-            }
-            else
-                alert("Backup failed");
-            $("#backup-progress-bar").hide();
-            $("#create-backup").show();
-        }).fail(function (data) {
-            alert(data.statusText);
-            $("#backup-progress-bar").hide();
-            $("#create-backup").show();
-        });;
-    });
-}
-
 $(function () {
     "use strict";
-    BindRestoreEvent();
     BindRemoveAttachmentEvents();
     BindRemoveArticleEvents();
     BindRemoveUserEvents();
     BindRemoveTagEvents();
-    BindBackupEvent();
     BindCategoryIconPreview();
     //
     // Editable mode

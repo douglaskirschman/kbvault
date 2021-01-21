@@ -23,11 +23,7 @@ namespace KBVault.Web.Controllers
                 ViewBag.CompanyName = settings.CompanyName;
                 ViewBag.JumbotronText = settings.JumbotronText;
                 ViewBag.TagLine = settings.TagLine;
-                ViewBag.DisqusShortName = settings.DisqusShortName;
-                ViewBag.ShareThisPublicKey = settings.ShareThisPublicKey;
                 ViewBag.ArticleDisplayCount = settings.ArticleCountPerCategoryOnHomePage;
-                ViewBag.ArticlePrefix = settings.ArticlePrefix;
-                ViewBag.AnalyticsAccount = settings.AnalyticsAccount;
                 ViewBag.Theme = ConfigurationManager.AppSettings["Theme"];
                 ViewBag.ShowTotalArticleCountOnFrontPage = settings.ShowTotalArticleCountOnFrontPage;
             }

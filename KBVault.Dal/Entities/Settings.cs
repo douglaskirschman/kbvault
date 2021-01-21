@@ -16,20 +16,9 @@ namespace KBVault.Dal.Entities
 
         public short ArticleCountPerCategoryOnHomePage { get; set; }
 
-        [StringLength(50)]
-        public string ShareThisPublicKey { get; set; }
-
-        [StringLength(150)]
-        public string DisqusShortName { get; set; }
 
         [StringLength(2000)]
         public string IndexFileExtensions { get; set; }
-
-        [StringLength(50)]
-        public string ArticlePrefix { get; set; }
-
-        [StringLength(50)]
-        public string AnalyticsAccount { get; set; }
 
         public long Author { get; set; }
 

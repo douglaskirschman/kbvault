@@ -282,9 +282,6 @@
   <data name="SettingsPageArticlePerCatLabel" xml:space="preserve">
     <value>Article Count Per Category On Landing Page</value>
   </data>
-  <data name="SettingsPageDisqusShortNameLabel" xml:space="preserve">
-    <value>Disqus Short Name</value>
-  </data>
   <data name="SettingsPageJumbotronTextLabel" xml:space="preserve">
     <value>Jumbotron Text</value>
   </data>
@@ -492,35 +489,11 @@
   <data name="LeftSideBarActivitiesTitle" xml:space="preserve">
     <value>User Activities</value>
   </data>
-  <data name="LeftSideBarBackupTitle" xml:space="preserve">
-    <value>Backup</value>
-  </data>
-  <data name="BackupPageTitle" xml:space="preserve">
-    <value>Backup / Restore </value>
-  </data>
-  <data name="BackupPageNewBackup" xml:space="preserve">
-    <value>Backup Now!</value>
-  </data>
   <data name="ErrorPageHeader" xml:space="preserve">
     <value>An error has occured</value>
   </data>
   <data name="ErrorPageTitle" xml:space="preserve">
     <value>Error</value>
-  </data>
-  <data name="BackupRestoreSuccessfull" xml:space="preserve">
-    <value>Database successfully restored.</value>
-  </data>
-  <data name="BackupTableDateColHeader" xml:space="preserve">
-    <value>Date</value>
-  </data>
-  <data name="BackupTableRestoreButtonLabel" xml:space="preserve">
-    <value>Restore</value>
-  </data>
-  <data name="SettingsBackupPath" xml:space="preserve">
-    <value>Backup Path</value>
-  </data>
-  <data name="SettingsBackupPathWarning" xml:space="preserve">
-    <value>Folder must be writable by MsSQL Service User.  if you want to use a folder under website use ~/Backupfolder syntax.</value>
   </data>
   <data name="IndexingLeftMenuTitle" xml:space="preserve">
     <value>Index Management</value>

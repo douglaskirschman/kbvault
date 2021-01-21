@@ -17,13 +17,9 @@ namespace KBVault.Web.Business.ApplicationSettings
             {
                 CompanyName = settings.CompanyName,
                 ArticleCountPerCategoryOnHomePage = settings.ArticleCountPerCategoryOnHomePage,
-                DisqusShortName = settings.DisqusShortName,
                 JumbotronText = settings.JumbotronText,
-                ShareThisPublicKey = settings.ShareThisPublicKey,
                 TagLine = settings.TagLine,
                 IndexFileExtensions = settings.IndexFileExtensions,
-                ArticlePrefix = settings.ArticlePrefix,
-                AnalyticsAccount = settings.AnalyticsAccount,
                 Author = KBVaultHelperFunctions.UserAsKbUser(HttpContext.Current.User).Id,
                 BackupPath = settings.BackupPath,
                 ShowTotalArticleCountOnFrontPage = settings.ShowTotalArticleCountOnFrontPage
