@@ -47,27 +47,6 @@
                 <label for="SelectedTheme">@UIResources.SettingsTheme</label>
                 @Html.DropDownListFor(m => m.SelectedTheme, new SelectList(Model.Themes, Model.SelectedTheme), new { @class = "form-control" })
             </div>            
-            
-        </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <label for="DisqusShortName">@UIResources.SettingsPageDisqusShortNameLabel</label>
-                <input type="text" class="form-control" name="DisqusShortName" value="@Model.DisqusShortName"/>
-            </div>
-            <div class="col-xs-6">
-                <label for="ArticlePrefix">@UIResources.SettingsArticlePrefixLabel</label>
-                <input type="text" class="form-control" name="ArticlePrefix" value="@Model.ArticlePrefix"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-6">
-                <label for="AnalyticsAccount">@UIResources.SettingsPageAnalyticsAccount</label>
-                <input type="text" class="form-control" name="AnalyticsAccount" value="@Model.AnalyticsAccount"/>
-            </div>            
-            <div class="col-xs-6">
-                <label for="ShareThisPublicKey">@UIResources.SettingsPageShareThisKeyLabel</label>
-                <input type="text" class="form-control" name="ShareThisPublicKey" value="@Model.ShareThisPublicKey" />
-            </div>
         </div>
     </div>    
     <div class="form-group">

@@ -8,6 +8,8 @@ namespace KBVault.Web
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+            BundleTable.EnableOptimizations = false;
+
             bundles.Add(new ScriptBundle("~/admin/js").Include(
                 "~/Assets/js/jquery/jquery-2-0-2.js",
                 "~/Assets/js/jquery/jquery-ui-1-10-4.js",
@@ -20,7 +22,7 @@ namespace KBVault.Web
                 "~/Assets/js/plugins/uploader/jquery.uploadfile.js",
                 "~/Assets/js/AdminLTE/app.js",
                 "~/Assets/ckeditor/ckeditor.js",
-                "~/Scripts/jquery.signalR-2.2.1.js",
+                "~/Scripts/jquery.signalR-2.4.1.js",
                 "~/Assets/js/kbvault.js"));
 
             bundles.Add(new StyleBundle("~/admin/css").Include(

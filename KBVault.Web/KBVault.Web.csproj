@@ -204,38 +204,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_GlobalResources\CommonResources.pt-BR.designer.cs">
-      <DependentUpon>CommonResources.pt-BR.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="App_GlobalResources\CommonResources.Designer.cs">
       <DependentUpon>CommonResources.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App_GlobalResources\CommonResources.tr.designer.cs">
-      <DependentUpon>CommonResources.tr.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\ErrorMessages.pt-BR.designer.cs">
-      <DependentUpon>ErrorMessages.pt-BR.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\ErrorMessages.tr.designer.cs">
-      <DependentUpon>ErrorMessages.tr.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="App_GlobalResources\ErrorMessages.designer.cs">
       <DependentUpon>ErrorMessages.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\UIResources.pt-BR.designer.cs">
-      <DependentUpon>UIResources.pt-BR.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -261,7 +236,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActivityController.cs" />
     <Compile Include="Controllers\ArticleController.cs" />
-    <Compile Include="Controllers\BackupController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -298,11 +272,6 @@
     <Compile Include="Models\Public\TagCloudItem.cs" />
     <Compile Include="Models\SettingsViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="App_GlobalResources\UIResources.tr.Designer.cs">
-      <DependentUpon>UIResources.tr.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="ViewEngines\KbVaultViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -864,6 +833,7 @@
     <Content Include="Assets\Themes\Default\css\site.css" />
     <Content Include="Assets\js\plugins\x-editable\xeditable.js" />
     <Content Include="BackupArchives\index.html" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Install\default_kbvault.sql" />
     <Content Include="Install\update-version-0.45-to-0.5.sql" />
@@ -974,7 +944,6 @@
     <None Include="Properties\PublishProfiles\LocalIIS-Deployment.pubxml" />
     <Content Include="Views\Activity\Index.cshtml" />
     <Content Include="Views\Shared\GoogleFonts.cshtml" />
-    <Content Include="Views\Backup\Index.cshtml" />
     <Content Include="Views\Indexing\Index.cshtml" />
     <None Include="Properties\PublishProfiles\ReleasePackage.pubxml" />
     <Content Include="Views\Themes\Default\Home\Tags.cshtml" />
@@ -987,6 +956,7 @@
     <Content Include="Views\Themes\Default\Partials\TagCloud.cshtml" />
     <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.5.1.min.map" />
+    <Content Include="stylecop.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -997,10 +967,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KBVault.Backup\KBVault.Backup.csproj">
-      <Project>{11c03037-761d-474a-97ac-c2902bb6ec3e}</Project>
-      <Name>KBVault.Backup</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KBVault.Core\KBVault.Core.csproj">
       <Project>{9a05b0a7-0b0d-451d-bfb1-58417f14fc2c}</Project>
       <Name>KBVault.Core</Name>
@@ -1023,31 +989,7 @@
     <Content Include="App_GlobalResources\ErrorMessages.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>ErrorMessages.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\CommonResources.tr.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>CommonResources.tr.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\ErrorMessages.tr.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>ErrorMessages.tr.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\CommonResources.pt-BR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>CommonResources.pt-BR.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\ErrorMessages.pt-BR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>ErrorMessages.pt-BR.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\UIResources.pt-BR.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>UIResources.pt-BR.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_GlobalResources\UIResources.tr.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>UIResources.tr.Designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

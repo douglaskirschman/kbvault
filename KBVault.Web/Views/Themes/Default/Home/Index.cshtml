@@ -116,7 +116,7 @@
                                 <div class="col-md-6 text-right">
                                     @if (ViewBag.ShowTotalArticleCountOnFrontPage)
                                     {
-                                            @Model.TotalArticleCountMessage
+                                        @Model.TotalArticleCountMessage
                                     }
                                 </div>
                             </div>
@@ -175,11 +175,11 @@
     <script src="@Url.Content("~/Assets/js/jquery/jquery-2-0-2.js")"></script>
     <script src="@Url.Content("~/Assets/js/jquery/jquery-ui-1-10-4.js")"></script>
     <script src="@Url.Content("https://cdn.app.deka.local/lib/versioned/bootstrap/4.3.1/js/bootstrap.min.js")"></script>
-    <script src="@Url.Content("~/Assets/Themes/"+ViewBag.Theme+"/js/cookie/jquery.cookie.js")"></script>
+    <script src="@Url.Content("~/Assets/js/plugins/cookie/jquery.cookie.js")"></script>
     <script src="@Url.Content("~/Assets/Themes/"+ViewBag.Theme+"/js/frontend.js")"></script>
-    <script src="@Url.Content("~/Assets/Themes/"+ViewBag.Theme+"/js/smartmenus/jquery.smartmenus.js")"></script>
-    <script src="@Url.Content("~/Assets/Themes/"+ViewBag.Theme+"/js/smartmenus/jquery.smartmenus.bootstrap.js")"></script>
-    <script src="@Url.Content("~/Assets/Themes/"+ViewBag.Theme+"/js/smartmenus/jquery.smartmenus.keyboard.js")"></script>
+    <script src="@Url.Content("~/Assets/js/plugins/smartmenus/jquery.smartmenus.js")"></script>
+    <script src="@Url.Content("~/Assets/js/plugins/smartmenus/jquery.smartmenus.bootstrap.js")"></script>
+    <script src="@Url.Content("~/Assets/js/plugins/smartmenus/jquery.smartmenus.keyboard.js")"></script>
 
     @if (!String.IsNullOrEmpty(ViewBag.AnalyticsAccount))
     {

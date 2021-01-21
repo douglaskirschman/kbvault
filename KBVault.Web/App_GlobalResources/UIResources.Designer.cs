@@ -448,51 +448,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Backup Now!.
-        /// </summary>
-        internal static string BackupPageNewBackup {
-            get {
-                return ResourceManager.GetString("BackupPageNewBackup", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Backup / Restore .
-        /// </summary>
-        internal static string BackupPageTitle {
-            get {
-                return ResourceManager.GetString("BackupPageTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Database successfully restored..
-        /// </summary>
-        internal static string BackupRestoreSuccessfull {
-            get {
-                return ResourceManager.GetString("BackupRestoreSuccessfull", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Date.
-        /// </summary>
-        internal static string BackupTableDateColHeader {
-            get {
-                return ResourceManager.GetString("BackupTableDateColHeader", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Restore.
-        /// </summary>
-        internal static string BackupTableRestoreButtonLabel {
-            get {
-                return ResourceManager.GetString("BackupTableRestoreButtonLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Remove Category?.
         /// </summary>
         internal static string CategoryArticleListRemoveCategoryConfirmMessage {
@@ -808,15 +763,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Backup.
-        /// </summary>
-        internal static string LeftSideBarBackupTitle {
-            get {
-                return ResourceManager.GetString("LeftSideBarBackupTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Categories.
         /// </summary>
         internal static string LeftSidebarCategoryListTitle {
@@ -1033,24 +979,6 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Backup Path.
-        /// </summary>
-        internal static string SettingsBackupPath {
-            get {
-                return ResourceManager.GetString("SettingsBackupPath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Folder must be writable by MsSQL Service User.  if you want to use a folder under website use ~/Backupfolder syntax..
-        /// </summary>
-        internal static string SettingsBackupPathWarning {
-            get {
-                return ResourceManager.GetString("SettingsBackupPathWarning", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Company Name is required.
         /// </summary>
         internal static string SettingsCompanyNameRequiredMessage {
@@ -1101,15 +1029,6 @@ namespace Resources {
         internal static string SettingsPageCompanyNameLabel {
             get {
                 return ResourceManager.GetString("SettingsPageCompanyNameLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Disqus Short Name.
-        /// </summary>
-        internal static string SettingsPageDisqusShortNameLabel {
-            get {
-                return ResourceManager.GetString("SettingsPageDisqusShortNameLabel", resourceCulture);
             }
         }
         
