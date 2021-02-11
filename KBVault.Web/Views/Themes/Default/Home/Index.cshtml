@@ -26,6 +26,17 @@
         var KB_SearchUrl = "@Url.Action("Ajax", "Search")";
         var KB_AdminUrl = "@Url.Action("Ajax", "Dashboard")";
     </script>
+    <style>
+        .content-format {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .content-format > :last-child { margin-bottom: 0 !important; }
+    </style>
 </head>
 <body>
     <header class="subhead" id="overview" style="position:relative; overflow: hidden;">
@@ -125,7 +136,7 @@
                                 @foreach (var article in Model.LatestArticles)
                                 {
                                     <div class="col-md-12">
-                                        <i class="fa fa-list-alt"></i>
+                                        <i class="fa fa-list-alt mr-1"></i>
                                         <a href='@Url.Action("Detail", "Home", new { id = article.SefName })'>@article.Title</a>
                                         <div class="pull-right"><i class="fa fa-thumbs-up"></i> @article.Likes.ToString()</div>
                                         <div class="pull-right pr-2"><i class="fa fa-eye"></i> @article.Views.ToString()</div>
@@ -138,8 +149,11 @@
                                             <b>Last Updated: </b>@article.Edited.Value.ToShortDateString()
                                         </small>
                                     </div>
+                                    <div class="col-md-12 content-format">
+                                        @Html.Raw(System.Web.HttpUtility.HtmlDecode(article.Content))
+                                    </div>
                                     <div class="col-md-12">
-                                        @Html.Raw(System.Web.HttpUtility.HtmlDecode(article.Content.Substring(0, Math.Min(article.Content.Length, 200))))
+                                        <hr>
                                     </div>
                                 }
                             </div>

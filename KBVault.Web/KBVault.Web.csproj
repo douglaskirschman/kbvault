@@ -761,6 +761,7 @@
     <Content Include="Assets\img\user-bg.png" />
     <Content Include="Assets\img\vault.png" />
     <Content Include="Assets\js\AdminLTE\app.js" />
+    <Content Include="Assets\Themes\Default\img\deka_bg.png" />
     <Content Include="Assets\Themes\Default\js\frontend.js" />
     <Content Include="Assets\js\jquery\jquery-2-0-2.js" />
     <Content Include="Assets\js\jquery\jquery-ui-1-10-4.js" />
