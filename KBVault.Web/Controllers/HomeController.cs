@@ -100,11 +100,13 @@ namespace KBVault.Web.Controllers
             {
                 using (var db = new KbVaultContext())
                 {
+                    var settings = SettingsService.GetSettings();
                     var article = db.PublishedArticles().FirstOrDefault(a => a.SefName == id);
                     if (article != null)
                     {
                         article.Views++;
                         db.SaveChanges();
+                        ViewBag.ArticlePrefix = settings.ArticlePrefix;
                         ViewBag.SimilarArticles = ArticleRepository.GetVisibleSimilarArticles((int)article.Id, DateTime.Today.Date);
                         return View(article);
                     }
