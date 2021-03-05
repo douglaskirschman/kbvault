@@ -16,6 +16,8 @@ namespace KBVault.Dal.Entities
 
         public short ArticleCountPerCategoryOnHomePage { get; set; }
 
+        [StringLength(50)]
+        public string ArticlePrefix { get; set; }
 
         [StringLength(2000)]
         public string IndexFileExtensions { get; set; }
